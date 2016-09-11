@@ -179,9 +179,9 @@ return;
  $sh=$this->getServer()->getScheduler();
  $sh->scheduleRepeatingTask(new jb($this),1);
     }
-	public function gcaaa(PlayerDeathEvent $event){
+	public function gcaaa(PlayerDeathEvent $e){
 		echo "cAADSADSADSXD";
-		$nm=$entity->getName();
+		$nm=$e->getPlayer()->getName();
 		foreach($this->klist as $id=>$pl){
 			if($pl==$nm){
 				unset($this->klist[$id]);
